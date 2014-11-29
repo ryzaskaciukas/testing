@@ -1,0 +1,34 @@
+button {
+  color: #fff;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background: #fff url('../img/bg_v1.png') no-repeat fixed center;
+}
+
+nav {
+  padding-top: 2em;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.splash {
+  padding-top: 15em;
+}
+
+.call {
+  margin: 3em;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  padding: 1em 2em;
+  color: #11a9ba;
+  border-color: #11a9ba;
+  background: none;
+}
+.call:hover {
+  background-color: #11a9ba;
+  border-color: #11a9ba;
+  color: #fff;
+}
