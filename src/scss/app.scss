@@ -1,21 +1,43 @@
+$centered-content: 0 5em;
+
 button {
   color: #fff;
 }
 
-body {
+html, body {
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
-  background: #fff url('../img/bg_v1.png') no-repeat fixed center;
+  color: #383838;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
 }
 
-nav {
-  padding-top: 2em;
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: $centered-content;
+  padding-top: 3em;
   text-transform: uppercase;
   text-align: right;
+  color: #fff;
 }
 
-.splash {
+.container-fluid {
+  margin-right: -35px;
+}
+
+.landing {
+  height: 100vh;
+  width: 100%;
   padding-top: 15em;
+  background: #fff url('../img/bg_v1.png') no-repeat fixed center;
+  background-size: cover;
+  background-position: center center;
+  color: #fff;
 }
 
 .call {
@@ -27,8 +49,24 @@ nav {
   border-color: #11a9ba;
   background: none;
 }
+
 .call:hover {
   background-color: #11a9ba;
   border-color: #11a9ba;
   color: #fff;
+}
+
+.our-work {
+  margin: 0 auto;
+  width: 700px;
+
+  h2 {
+    padding: 4em 0 1em;
+  }
+
+  img {
+    margin-top: 2em;
+    width: 650px;
+    height: 500px;
+  }
 }

@@ -4,21 +4,36 @@ head
     title Bro app
     meta(content='Bro app', name='description')
     meta(name='viewport' content='width=device-width, initial-scale=1')
-    link(href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css')
+    link(href='//fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css')
     link(href='css/bootstrap.min.css', rel='stylesheet')
     link(href='css/app.css', rel='stylesheet')
+    script(src='js/scroll-up-bar.min.js')
   body
-    .container
-      nav.row
-        .logo.col-md-2 Spacepicnic
-        .col-md-offset-2.col-md-2 Why choose us
-        .col-md-2 Our process
-        .col-md-2 Our work
-        .col-md-2 Hire us
+    .container-fluid
+      .container
+        header.row
+          .logo.col-md-2.col-xs-2 Spacepicnic
+          .col-md-offset-2.col-md-2.col-xs-2 Why choose us
+          .col-md-2.col-xs-2 Our process
+          .col-md-2.col-xs-2 Our work
+          .col-md-2.col-xs-2 Hire us
 
-      .content.row
-        .splash.text-center
-          h1 How about making something breathtaking?
-          h3 rocking with rockstars perfectionists may be difficult
-          button.btn.btn-default.call(type='button')
-            | See our work
+      .landing.row
+        .container
+          .text-center
+            h1 How about making something breathtaking?
+            h3 rocking with rockstars perfectionists may be difficult
+            button.btn.btn-default.call(type='button')
+              | See our work
+
+      .our-work
+        .content.row
+          .text-center
+            h2 ParkatmyHouse
+            h4 Park at my house got in touch with us to design their web and iOS
+              applications, alongside their site, from the ground up.
+
+            img(src='img/example.png')
+            p
+              button.btn.btn-default.call(type='button')
+                | Read more
