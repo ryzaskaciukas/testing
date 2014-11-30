@@ -35,12 +35,7 @@ gulp.task 'sass', ->
 
 gulp.task 'coffee', ->
   gulp
-    .src('./src/coffee/cornflake.coffee')
-    .pipe(coffeeify())
-    .pipe(gulp.dest('./dist/js/'))
-
-  gulp
-    .src('./src/coffee/compiler.coffee')
+    .src('./src/coffee/**/*.coffee')
     .pipe(coffeeify())
     .pipe(gulp.dest('./dist/js/'))
 
