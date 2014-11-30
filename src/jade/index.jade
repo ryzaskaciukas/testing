@@ -13,17 +13,21 @@ head
     script(src='js/app.js')
   body
     .container-fluid
-      header.row
-        .container
-          .logo.col-md-2.col-xs-2 Spacepicnic
-          .col-md-offset-2.col-md-2.col-xs-2 Why choose us
-          .col-md-2.col-xs-2 Our process
-          .col-md-2.col-xs-2 Our work
-          .col-md-2.col-xs-2
+      header
+        ul.nav.nav-justified
+          li.logo
+            a(href='#') Spacepicnic
+          li
+            a(href='#') Our work
+          li
+            a(href='#') Why choose us
+          li
+            a(href='#') Our process
+          li
             a.typeform-share.link(href="https://domas.typeform.com/to/Ditaxt" data-mode="1" target="_blank")
-              |Hire us
+              | Hire us
 
-      .landing.row
+      .landing
         .container
           .text-center
             h1 How about making something breathtaking?
