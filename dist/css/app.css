@@ -14,7 +14,7 @@ html, body {
 header {
   position: fixed;
   top: 0px;
-  padding: 3em 0;
+  padding: 2em 0;
   background-color: rgba(33, 37, 43, 0); }
   header .nav-justified {
     text-transform: uppercase;
@@ -31,14 +31,15 @@ header {
 .container-fluid {
   margin: 0;
   padding: 0;
-  border: 0; }
+  border: 0;
+  overflow-x: hidden; }
 
 .landing {
   height: 100vh;
   width: 100%;
   padding-top: 15em;
-  /* background: #fff url('../img/bg_v1.png') no-repeat fixed center; */
-  background-color: #21262c;
+  background: #21262c url('../img/bg_v1.png') no-repeat fixed center;
+  /* background-color: #21262c; */
   background-size: cover;
   background-position: center center;
   color: #fff; }
@@ -61,11 +62,33 @@ header {
   margin: 0 auto;
   width: 700px; }
   .our-work h2 {
-    padding: 4em 0 1em; }
+    padding: 2em 0 1em; }
   .our-work img {
     margin-top: 2em;
-    width: 650px;
-    height: 500px; }
+    width: 550px;
+    /* height: 500px; */ }
 
-.second {
+.why-choose-us {
   background-color: #dedfe0; }
+  .why-choose-us .abstract {
+    padding: 4em; }
+    .why-choose-us .abstract img {
+      height: 250px; }
+    .why-choose-us .abstract h2 {
+      color: #11a9ba; }
+    .why-choose-us .abstract p {
+      font-size: 1.2em; }
+  .why-choose-us .members {
+    padding: 1em 0 3em; }
+    .why-choose-us .members .member {
+      padding: 2em; }
+      .why-choose-us .members .member h3 {
+        color: #11a9ba; }
+      .why-choose-us .members .member .avatar {
+        width: 100%;
+        border-radius: 99999px; }
+
+footer {
+  padding: 5em;
+  background-color: #21262c;
+  color: #fff; }
