@@ -3,7 +3,7 @@
   var App;
 
   App = (function() {
-    var init, updateHeaderOpacity;
+    var init, initTypeform, updateHeaderOpacity;
     init = function() {
       var $header;
       $header = $('header');
@@ -15,6 +15,7 @@
           return $header.removeClass('scrolled');
         }
       });
+      initTypeform();
       return $(document).scroll(function() {
         return _.debounce(updateHeaderOpacity, 0.5)();
       });
@@ -26,6 +27,26 @@
         opacity = 0.7;
       }
       return $('header').css('background-color', "hsla(213, 14%, 15%, " + opacity + ")");
+    };
+    initTypeform = function() {
+      var b, ce, d, gi, gt, id, js, q, qs, s;
+      qs = void 0;
+      js = void 0;
+      q = void 0;
+      s = void 0;
+      d = document;
+      gi = d.getElementById;
+      ce = d.createElement;
+      gt = d.getElementsByTagName;
+      id = "typef_orm";
+      b = "https://s3-eu-west-1.amazonaws.com/share.typeform.com/";
+      if (!gi.call(d, id)) {
+        js = ce.call(d, "script");
+        js.id = id;
+        js.src = b + "share.js";
+        q = gt.call(d, "script")[0];
+        return q.parentNode.insertBefore(js, q);
+      }
     };
     return {
       init: init
