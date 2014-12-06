@@ -91,24 +91,40 @@ head
                 | year.
 
       .we-do-talks
-        .container
-          .abstract
-            .row.text-center
-              h2 We do talks
-          .row
+        .abstract
+          .row.text-center
+            h2 We do talks
+        .row
+          .container
+          .text-center.col-md-offset-3.col-md-6
             p
-              | We are active in the developer superstar community. Doing all
-              | kinds of talks in various developer conferences.
+              | We are active in the developer superstar community.
+            p
+              | Doing all kinds of talks in various developer conferences.
 
-          .row
-            h3 Rockstars and Productivity
-            h4 at RubyConf 2014
+        .container
+          .talk-slides.row
+            .col-md-offset-2.col-md-3
+              img.slide(src='img/rockstarsandproductivity.png')
+            .col-md-3
+              img.slide(src='img/rubyonrailsisdead.png')
+            .col-md-3
+              img.slide(src='img/whydoesruby.png')
 
-            h3 Ruby on Rails is dead (its a joke)
-            h4 at VilniusRB
+          .talk-descriptions.row
+            .col-md-offset-2.col-md-3
+              h3 Rockstars and Productivity
+              h4 at RubyConf 2014
+            .col-md-3
+              h3 Ruby on Rails is dead (its a joke)
+              h4 at VilniusRB
+            .col-md-3
+              h3 Why does Ruby own the startup world?
+              h4 at StartCamp
 
-            h3 Why does Ruby own the startup world?
-            h4 at StartCamp
+          p.text-center
+            button.btn.btn-default.call(type='button')
+              | More talks
 
       .our-process
         .row

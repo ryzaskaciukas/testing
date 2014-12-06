@@ -92,6 +92,13 @@ header {
       .who-are-we .members .member .open-source img {
         height: 100px; }
 
+.we-do-talks {
+  /* padding-bottom: 10em; */ }
+  .we-do-talks .talk-slides img {
+    height: 200px; }
+  .we-do-talks .talk-descriptions {
+    padding-bottom: 2em; }
+
 .our-process {
   background-color: #dedfe0; }
 

@@ -132,6 +132,20 @@ header {
   }
 }
 
+.we-do-talks {
+  .talk-slides {
+    img {
+      height: 200px;
+    }
+  }
+
+  .talk-descriptions {
+    padding-bottom: 2em;
+  }
+
+  /* padding-bottom: 10em; */
+}
+
 .our-process {
   background-color: #dedfe0;
 }
