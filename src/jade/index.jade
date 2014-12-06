@@ -48,9 +48,15 @@ head
 
           .screens
             img(src='img/screensai.png')
-          p
-            button.btn.btn-default.call(type='button')
-              | Check out more
+
+        .built-with.container
+          .row
+            .col-md-offset-1.col-md-5
+              | The beautiful products here were designed and built with
+              | Angular.js, Ember.js, React.js and Meteor.js.
+        p
+          button.btn.btn-default.call(type='button')
+            | Check out more
 
       #who-are-we
         .abstract.row.text-center
@@ -198,5 +204,5 @@ head
       footer
         .container.text-center
           h2 Enough, enough. Let's start hitting it hard together
-          button.btn.btn-default.call(type='button')
+          a.btn.btn-default.call.typeform-share.link(href="https://domas.typeform.com/to/Ditaxt" data-mode="1" target="_blank")
             | Hire us

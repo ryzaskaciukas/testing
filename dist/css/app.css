@@ -137,6 +137,8 @@ header {
       margin-top: 2em;
       width: 550px;
       /* height: 500px; */ }
+  #our-work .built-with {
+    padding-top: 3.5em; }
 
 .abstract {
   padding: 4em; }
