@@ -72,7 +72,7 @@
       };
     };
     startTracking = function() {
-      return $(document).click('a', function(link) {
+      return $(document).on('click', 'a', function(link) {
         return analytics.track('Clicked link', {
           text: $(link.target).text(),
           href: $(link.target).prop('href')

@@ -55,7 +55,7 @@ App = (->
       func.apply context, args  if callNow
 
   startTracking = ->
-    $(document).click 'a', (link) ->
+    $(document).on 'click', 'a', (link) ->
       analytics.track 'Clicked link',
         text: $(link.target).text()
         href: $(link.target).prop('href')
