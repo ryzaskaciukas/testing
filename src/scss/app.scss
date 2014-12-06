@@ -115,7 +115,7 @@ header {
 }
 
 .abstract {
-  padding: 4em;
+  padding: 4em 0 3em;
 
   img {
     height: 250px;
@@ -131,6 +131,10 @@ header {
 }
 
 #who-are-we {
+  .abstract {
+    padding: 4em 0 1em;
+  }
+
   background-color: #dedfe0;
 
   .members {
@@ -149,8 +153,12 @@ header {
       }
 
       .open-source {
+        h5 {
+          font-weight: 600;
+        }
+
         img {
-          height: 100px;
+          height: 50px;
         }
       }
     }
@@ -158,6 +166,14 @@ header {
 }
 
 #we-do-talks {
+  .abstract {
+    padding-bottom: 1em;
+  }
+
+  .main-talks {
+    padding-bottom: 2em;
+  }
+
   .talk-slides {
     img {
       height: 200px;
@@ -166,9 +182,11 @@ header {
 
   .talk-descriptions {
     padding-bottom: 2em;
-  }
 
-  /* padding-bottom: 10em; */
+    a {
+      color: #11a9ba;
+    }
+  }
 }
 
 #our-process {

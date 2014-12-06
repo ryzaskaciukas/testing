@@ -81,7 +81,7 @@ header {
     margin-right: 1em; }
 
 .abstract {
-  padding: 4em; }
+  padding: 4em 0 3em; }
   .abstract img {
     height: 250px; }
   .abstract h2 {
@@ -91,6 +91,8 @@ header {
 
 #who-are-we {
   background-color: #dedfe0; }
+  #who-are-we .abstract {
+    padding: 4em 0 1em; }
   #who-are-we .members {
     padding: 1em 0 3em; }
     #who-are-we .members .member {
@@ -100,15 +102,21 @@ header {
       #who-are-we .members .member .avatar {
         width: 100%;
         border-radius: 99999px; }
+      #who-are-we .members .member .open-source h5 {
+        font-weight: 600; }
       #who-are-we .members .member .open-source img {
-        height: 100px; }
+        height: 50px; }
 
-#we-do-talks {
-  /* padding-bottom: 10em; */ }
-  #we-do-talks .talk-slides img {
-    height: 200px; }
-  #we-do-talks .talk-descriptions {
-    padding-bottom: 2em; }
+#we-do-talks .abstract {
+  padding-bottom: 1em; }
+#we-do-talks .main-talks {
+  padding-bottom: 2em; }
+#we-do-talks .talk-slides img {
+  height: 200px; }
+#we-do-talks .talk-descriptions {
+  padding-bottom: 2em; }
+  #we-do-talks .talk-descriptions a {
+    color: #11a9ba; }
 
 #our-process {
   background-color: #dedfe0;
