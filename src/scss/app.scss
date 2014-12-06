@@ -31,7 +31,7 @@ header {
       color: #fff;
       background: transparent;
 
-      &:hover {
+      &:hover, &:focus {
         color: #fff;
         text-decoration: underline;
         background: transparent;
@@ -47,7 +47,7 @@ header {
   overflow-x: hidden;
 }
 
-.landing {
+#landing {
   height: 100vh;
   width: 100%;
   padding-top: 15em;
@@ -74,7 +74,7 @@ header {
   color: #fff;
 }
 
-.our-work {
+#our-work {
   margin: 0 auto;
   width: 700px;
 
@@ -105,7 +105,7 @@ header {
   }
 }
 
-.who-are-we {
+#who-are-we {
   background-color: #dedfe0;
 
   .members {
@@ -132,7 +132,7 @@ header {
   }
 }
 
-.we-do-talks {
+#we-do-talks {
   .talk-slides {
     img {
       height: 200px;
@@ -146,7 +146,7 @@ header {
   /* padding-bottom: 10em; */
 }
 
-.our-process {
+#our-process {
   background-color: #dedfe0;
   padding-bottom: 5em;
 

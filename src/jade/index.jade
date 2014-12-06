@@ -9,6 +9,7 @@ head
     link(href='css/app.css', rel='stylesheet')
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
     script(src='js/scroll-up-bar.min.js')
+    script(src='js/smooth-scroll.min.js')
     script(src='//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js')
     script(src='js/app.js')
   body
@@ -16,29 +17,29 @@ head
       header
         ul.nav.nav-justified
           li.logo
-            a(href='#') Spacepicnic
+            a(href='#landing' data-scroll) Spacepicnic
           li
-            a(href='#') Our work
+            a(href='#our-work' data-scroll) Our work
           li
-            a(href='#') Who are we
+            a(href='#who-are-we' data-scroll) Who are we
           li
-            a(href='#') Talks
+            a(href='#we-do-talks' data-scroll) Talks
           li
-            a(href='#') Our process
+            a(href='#our-process' data-scroll) Our process
           li
             a.typeform-share.link(href="https://domas.typeform.com/to/Ditaxt" data-mode="1" target="_blank")
               | Hire us
 
-      .landing
+      #landing
         .container
           .text-center
             h1 How about making something breathtaking?
             h3 this web design studio builds beautiful web and app experiences
-            button.btn.btn-default.call(type='button')
+            a.btn.btn-default.call(type='button' href='#our-work' data-scroll)
               | See our work
 
       .row
-        .our-work.text-center
+        #our-work.text-center
           h2 Experiences we're built
 
           img(src='img/pathoscope.png')
@@ -47,7 +48,7 @@ head
             button.btn.btn-default.call(type='button')
               | Check out more
 
-      .who-are-we
+      #who-are-we
         .abstract.row.text-center
           h2 Who are we
 
@@ -90,7 +91,7 @@ head
                 | brand design and does professional design for more than a
                 | year.
 
-      .we-do-talks
+      #we-do-talks
         .abstract
           .row.text-center
             h2 We do talks
@@ -123,10 +124,10 @@ head
               h4 at StartCamp
 
           p.text-center
-            button.btn.btn-default.call(type='button')
+            a.btn.btn-default.call(type='button' href='http://domasbitvinskas.com/talks'  target='_blank')
               | More talks
 
-      .our-process
+      #our-process
         .abstract
           .row.text-center
             h2 Our process

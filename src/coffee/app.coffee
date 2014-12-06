@@ -8,6 +8,7 @@ App = (->
       exitViewport: ->
         $header.removeClass('scrolled')
 
+    smoothScroll.init()
     initTypeform()
 
     $(document).scroll ->

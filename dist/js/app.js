@@ -15,6 +15,7 @@
           return $header.removeClass('scrolled');
         }
       });
+      smoothScroll.init();
       initTypeform();
       return $(document).scroll(function() {
         return _.debounce(updateHeaderOpacity, 0.5)();

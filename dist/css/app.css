@@ -24,7 +24,7 @@ header {
     header .nav-justified li > a {
       color: #fff;
       background: transparent; }
-      header .nav-justified li > a:hover {
+      header .nav-justified li > a:hover, header .nav-justified li > a:focus {
         color: #fff;
         text-decoration: underline;
         background: transparent; }
@@ -35,7 +35,7 @@ header {
   border: 0;
   overflow-x: hidden; }
 
-.landing {
+#landing {
   height: 100vh;
   width: 100%;
   padding-top: 15em;
@@ -59,12 +59,12 @@ header {
   border-color: #11a9ba;
   color: #fff; }
 
-.our-work {
+#our-work {
   margin: 0 auto;
   width: 700px; }
-  .our-work h2 {
+  #our-work h2 {
     padding: 2em 0 1em; }
-  .our-work img {
+  #our-work img {
     margin-top: 2em;
     width: 550px;
     /* height: 500px; */ }
@@ -78,35 +78,35 @@ header {
   .abstract p {
     font-size: 1.2em; }
 
-.who-are-we {
+#who-are-we {
   background-color: #dedfe0; }
-  .who-are-we .members {
+  #who-are-we .members {
     padding: 1em 0 3em; }
-    .who-are-we .members .member {
+    #who-are-we .members .member {
       padding: 2em; }
-      .who-are-we .members .member h3 {
+      #who-are-we .members .member h3 {
         color: #11a9ba; }
-      .who-are-we .members .member .avatar {
+      #who-are-we .members .member .avatar {
         width: 100%;
         border-radius: 99999px; }
-      .who-are-we .members .member .open-source img {
+      #who-are-we .members .member .open-source img {
         height: 100px; }
 
-.we-do-talks {
+#we-do-talks {
   /* padding-bottom: 10em; */ }
-  .we-do-talks .talk-slides img {
+  #we-do-talks .talk-slides img {
     height: 200px; }
-  .we-do-talks .talk-descriptions {
+  #we-do-talks .talk-descriptions {
     padding-bottom: 2em; }
 
-.our-process {
+#our-process {
   background-color: #dedfe0;
   padding-bottom: 5em; }
-  .our-process img.process-illustration {
+  #our-process img.process-illustration {
     height: 200px; }
-  .our-process .usual-process {
+  #our-process .usual-process {
     padding-top: 2em; }
-    .our-process .usual-process h3 {
+    #our-process .usual-process h3 {
       padding-bottom: 0.5em; }
 
 footer {
