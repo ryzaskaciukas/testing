@@ -5,6 +5,7 @@ head
     meta(content='Spacepicnic Design Studio', name='description')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(href='//fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css')
+    link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet')
     link(href='css/bootstrap.min.css', rel='stylesheet')
     link(href='css/app.css', rel='stylesheet')
     script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
@@ -38,12 +39,15 @@ head
             a.btn.btn-default.call(type='button' href='#our-work' data-scroll)
               | See our work
 
-      .row
-        #our-work.text-center
+            p.button.scroll
+              span.scroll-down-arrow
+
+      #our-work.text-center
+        .row
           h2 Experiences we're built
 
-          img(src='img/pathoscope.png')
-          img(src='img/example.png')
+          .screens
+            img(src='img/screensai.png')
           p
             button.btn.btn-default.call(type='button')
               | Check out more

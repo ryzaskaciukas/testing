@@ -43,7 +43,74 @@ header {
   /* background-color: #21262c; */
   background-size: cover;
   background-position: center center;
-  color: #fff; }
+  color: #fff;
+  @-webkit-keyframes bounce {
+    0%, 100% {
+      top: 9px;
+      opacity: 0.5; }
+
+    25% {
+      top: 12px;
+      opacity: 1; }
+
+    50% {
+      opacity: 0.8; } }
+
+  @keyframes bounce {
+    0%, 100% {
+      top: 9px;
+      opacity: 0.5; }
+
+    25% {
+      top: 12px;
+      opacity: 1; }
+
+    50% {
+      opacity: 0.8; } }
+ }
+  #landing .button.scroll {
+    padding: 8px;
+    background: #111;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    position: relative; }
+  #landing .scroll-down-arrow {
+    margin: 5px 0 0;
+    position: absolute;
+    left: 13px;
+    top: 7px;
+    -webkit-animation: bounce 1000ms ease infinite;
+    -moz-animation: bounce 1000ms ease infinite;
+    -o-animation: bounce 1000ms ease infinite;
+    animation: bounce 1000ms ease infinite;
+    -webkit-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+    -moz-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+    -ms-animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+    animation-timing-function: cubic-bezier(0.14, 0.75, 0.2, 1.01);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #f2f2f2;
+    content: ""; }
+  #landing .button.scroll:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 0px 3px white, inset 0px 0px 3px white;
+    padding: 2px;
+    z-index: -1;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: block;
+    content: "";
+    -webkit-animation: ring 1s alternate 0s infinite;
+    -moz-animation: ring 1s alternate 0s infinite;
+    -o-animation: ring 1s linear 0s infinite;
+    animation: ring 1s linear 0s infinite; }
 
 .call {
   margin: 3em;
@@ -64,10 +131,12 @@ header {
   width: 700px; }
   #our-work h2 {
     padding: 2em 0 1em; }
-  #our-work img {
-    margin-top: 2em;
-    width: 550px;
-    /* height: 500px; */ }
+  #our-work .screens {
+    border-bottom: 2px solid #dedfe0; }
+    #our-work .screens img {
+      margin-top: 2em;
+      width: 550px;
+      /* height: 500px; */ }
 
 .abstract {
   padding: 4em; }
