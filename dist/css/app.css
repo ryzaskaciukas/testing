@@ -96,8 +96,8 @@ header {
   #who-are-we .members {
     padding: 1em 0 3em; }
     #who-are-we .members .member {
-      padding: 2em; }
-      #who-are-we .members .member h3 {
+      padding: 2em 0 4em; }
+      #who-are-we .members .member h3 a {
         color: #11a9ba; }
       #who-are-we .members .member .avatar {
         width: 100%;
@@ -121,12 +121,20 @@ header {
 #our-process {
   background-color: #dedfe0;
   padding-bottom: 5em; }
+  #our-process .abstract {
+    padding-bottom: 1em; }
   #our-process img.process-illustration {
     height: 200px; }
+  #our-process .process-description {
+    padding-top: 3em; }
   #our-process .usual-process {
     padding-top: 2em; }
     #our-process .usual-process h3 {
       padding-bottom: 0.5em; }
+    #our-process .usual-process .step {
+      padding-bottom: 1.5em; }
+      #our-process .usual-process .step .bubble {
+        padding-top: 1.5em; }
 
 footer {
   padding: 5em 0 3em;

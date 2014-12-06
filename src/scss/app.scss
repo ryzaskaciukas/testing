@@ -141,9 +141,9 @@ header {
     padding: 1em 0 3em;
 
     .member {
-      padding: 2em;
+      padding: 2em 0 4em;
 
-      h3 {
+      h3 a {
         color: #11a9ba;
       }
 
@@ -193,8 +193,16 @@ header {
   background-color: #dedfe0;
   padding-bottom: 5em;
 
+  .abstract {
+    padding-bottom: 1em;
+  }
+
   img.process-illustration {
     height: 200px;
+  }
+
+  .process-description {
+    padding-top: 3em;
   }
 
   .usual-process {
@@ -202,6 +210,14 @@ header {
 
     h3 {
       padding-bottom: .5em;
+    }
+
+    .step {
+      padding-bottom: 1.5em;
+
+      .bubble {
+        padding-top: 1.5em;
+      }
     }
   }
 }
