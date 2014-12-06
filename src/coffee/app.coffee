@@ -10,9 +10,11 @@ App = (->
 
     smoothScroll.init()
     initTypeform()
+    startTracking()
 
     $(document).scroll ->
       debounce(updateHeaderOpacity, 0.5)()
+
 
   updateHeaderOpacity = ->
     opacity = ($(window).scrollTop() * 0.7) / $(window).height()
@@ -51,6 +53,12 @@ App = (->
       clearTimeout timeout
       timeout = setTimeout(later, wait)
       func.apply context, args  if callNow
+
+  startTracking = ->
+    $(document).click 'a', (link) ->
+      analytics.track 'Clicked link',
+        text: $(link.target).text()
+        href: $(link.target).prop('href')
 
   return {
     init: init

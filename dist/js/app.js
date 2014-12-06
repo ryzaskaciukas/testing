@@ -3,7 +3,7 @@
   var App;
 
   App = (function() {
-    var debounce, init, initTypeform, updateHeaderOpacity;
+    var debounce, init, initTypeform, startTracking, updateHeaderOpacity;
     init = function() {
       var $header;
       $header = $('header');
@@ -17,6 +17,7 @@
       });
       smoothScroll.init();
       initTypeform();
+      startTracking();
       return $(document).scroll(function() {
         return debounce(updateHeaderOpacity, 0.5)();
       });
@@ -69,6 +70,14 @@
           return func.apply(context, args);
         }
       };
+    };
+    startTracking = function() {
+      return $(document).click('a', function(link) {
+        return analytics.track('Clicked link', {
+          text: $(link.target).text(),
+          href: $(link.target).prop('href')
+        });
+      });
     };
     return {
       init: init
