@@ -20,6 +20,7 @@ header {
   top: 0px;
   padding: 2em 0;
   background-color: rgba(33, 37, 43, 0);
+  z-index: 1;
 
   .nav-justified {
     text-transform: uppercase;
@@ -88,24 +89,24 @@ header {
   }
 }
 
-.why-choose-us {
-  background-color: #dedfe0;
+.abstract {
+  padding: 4em;
 
-  .abstract {
-    padding: 4em;
-
-    img {
-      height: 250px;
-    }
-
-    h2 {
-      color: #11a9ba;
-    }
-
-    p {
-      font-size: 1.2em;
-    }
+  img {
+    height: 250px;
   }
+
+  h2 {
+    color: #11a9ba;
+  }
+
+  p {
+    font-size: 1.2em;
+  }
+}
+
+.who-are-we {
+  background-color: #dedfe0;
 
   .members {
     padding: 1em 0 3em;
@@ -121,12 +122,22 @@ header {
         width: 100%;
         border-radius: 99999px;
       }
+
+      .open-source {
+        img {
+          height: 100px;
+        }
+      }
     }
   }
 }
 
+.our-process {
+  background-color: #dedfe0;
+}
+
 footer {
-  padding: 5em;
+  padding: 5em 0 3em;
   background-color: #21262c;
   color: #fff;
 }

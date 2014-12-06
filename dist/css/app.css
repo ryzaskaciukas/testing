@@ -15,7 +15,8 @@ header {
   position: fixed;
   top: 0px;
   padding: 2em 0;
-  background-color: rgba(33, 37, 43, 0); }
+  background-color: rgba(33, 37, 43, 0);
+  z-index: 1; }
   header .nav-justified {
     text-transform: uppercase;
     text-align: center;
@@ -68,27 +69,33 @@ header {
     width: 550px;
     /* height: 500px; */ }
 
-.why-choose-us {
+.abstract {
+  padding: 4em; }
+  .abstract img {
+    height: 250px; }
+  .abstract h2 {
+    color: #11a9ba; }
+  .abstract p {
+    font-size: 1.2em; }
+
+.who-are-we {
   background-color: #dedfe0; }
-  .why-choose-us .abstract {
-    padding: 4em; }
-    .why-choose-us .abstract img {
-      height: 250px; }
-    .why-choose-us .abstract h2 {
-      color: #11a9ba; }
-    .why-choose-us .abstract p {
-      font-size: 1.2em; }
-  .why-choose-us .members {
+  .who-are-we .members {
     padding: 1em 0 3em; }
-    .why-choose-us .members .member {
+    .who-are-we .members .member {
       padding: 2em; }
-      .why-choose-us .members .member h3 {
+      .who-are-we .members .member h3 {
         color: #11a9ba; }
-      .why-choose-us .members .member .avatar {
+      .who-are-we .members .member .avatar {
         width: 100%;
         border-radius: 99999px; }
+      .who-are-we .members .member .open-source img {
+        height: 100px; }
+
+.our-process {
+  background-color: #dedfe0; }
 
 footer {
-  padding: 5em;
+  padding: 5em 0 3em;
   background-color: #21262c;
   color: #fff; }
