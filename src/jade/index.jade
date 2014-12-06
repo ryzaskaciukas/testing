@@ -5,10 +5,9 @@ head
     meta(content='Spacepicnic Design Studio', name='description')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     link(href='//fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css')
-    link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet')
     link(href='css/bootstrap.min.css', rel='stylesheet')
     link(href='css/app.css', rel='stylesheet')
-    script(src='http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
     script(src='js/scroll-up-bar.min.js')
     script(src='js/smooth-scroll.min.js')
     script(src='//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js')
@@ -34,13 +33,15 @@ head
       #landing
         .container
           .text-center
-            h1 How about making something breathtaking?
-            h3 this web design studio builds beautiful web and app experiences
-            a.btn.btn-default.call(type='button' href='#our-work' data-scroll)
-              | See our work
+            .row
+              h1 How about making something breathtaking?
+              h3 this design studio builds beautiful web and app experiences
+              a.btn.btn-default.call(type='button' href='#our-work' data-scroll)
+                | See our work
 
-            p.button.scroll
-              span.scroll-down-arrow
+            .scroll-down.row
+              a(href='#our-work' data-scroll)
+                img(src='img/scroll.png')
 
       #our-work.text-center
         .row
@@ -60,7 +61,7 @@ head
             a.btn.btn-default.call(type='button' href='https://dribbble.com/benasbitvinskas'  target='_blank')
               | More designs
             a.btn.btn-default.call(type='button' href='https://github.com/Nedomas/'  target='_blank')
-              | More code
+              | Code
 
       #who-are-we
         .abstract.row.text-center

@@ -3,7 +3,7 @@
   var App;
 
   App = (function() {
-    var init, initTypeform, updateHeaderOpacity;
+    var debounce, init, initTypeform, updateHeaderOpacity;
     init = function() {
       var $header;
       $header = $('header');
@@ -18,7 +18,7 @@
       smoothScroll.init();
       initTypeform();
       return $(document).scroll(function() {
-        return _.debounce(updateHeaderOpacity, 0.5)();
+        return debounce(updateHeaderOpacity, 0.5)();
       });
     };
     updateHeaderOpacity = function() {
@@ -48,6 +48,27 @@
         q = gt.call(d, "script")[0];
         return q.parentNode.insertBefore(js, q);
       }
+    };
+    debounce = function(func, wait, immediate) {
+      var timeout;
+      timeout = void 0;
+      return function() {
+        var args, callNow, context, later;
+        context = this;
+        args = arguments;
+        later = function() {
+          timeout = null;
+          if (!immediate) {
+            return func.apply(context, args);
+          }
+        };
+        callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) {
+          return func.apply(context, args);
+        }
+      };
     };
     return {
       init: init
