@@ -148,6 +148,19 @@ header {
 
 .our-process {
   background-color: #dedfe0;
+  padding-bottom: 5em;
+
+  img.process-illustration {
+    height: 200px;
+  }
+
+  .usual-process {
+    padding-top: 2em;
+
+    h3 {
+      padding-bottom: .5em;
+    }
+  }
 }
 
 footer {
