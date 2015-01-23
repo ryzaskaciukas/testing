@@ -25,6 +25,7 @@ gulp.task 'jade', ->
   gulp.src('./src/jade/*.jade')
   .pipe(jade({
     locals: {}
+    pretty: true
   }))
   .pipe(gulp.dest('./dist/html/'))
 

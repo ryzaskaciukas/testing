@@ -1,1 +1,63 @@
-(function(){var t;t=function(){var t,r,e,n,o;return r=function(){var r;return r=$("header"),r.scrollupbar({enterViewport:function(){return r.addClass("scrolled")},exitViewport:function(){return r.removeClass("scrolled")}}),smoothScroll.init(),e(),n(),$(document).scroll(function(){return t(o,.5)()})},o=function(){var t;return t=.7*$(window).scrollTop()/$(window).height(),t>.7&&(t=.7),$("header").css("background-color","hsla(213, 14%, 15%, "+t+")")},e=function(){var t,r,e,n,o,i,c,a,u,l;return u=void 0,c=void 0,a=void 0,l=void 0,e=document,n=e.getElementById,r=e.createElement,o=e.getElementsByTagName,i="typef_orm",t="https://s3-eu-west-1.amazonaws.com/share.typeform.com/",n.call(e,i)?void 0:(c=r.call(e,"script"),c.id=i,c.src=t+"share.js",a=o.call(e,"script")[0],a.parentNode.insertBefore(c,a))},t=function(t,r,e){var n;return n=void 0,function(){var o,i,c,a;return c=this,o=arguments,a=function(){return n=null,e?void 0:t.apply(c,o)},i=e&&!n,clearTimeout(n),n=setTimeout(a,r),i?t.apply(c,o):void 0}},n=function(){return $(document).on("click","a",function(t){return analytics.track("Clicked link",{text:$(t.target).text(),href:$(t.target).prop("href")})})},{init:r}}(),$(function(){return t.init()})}).call(this);
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+(function() {
+  var App;
+
+  App = (function() {
+    var debounce, init, startTracking;
+    init = function() {
+      var $header;
+      $header = $('header');
+      $header.scrollupbar({
+        enterViewport: function() {
+          console.log('a');
+          return $header.addClass('scrolled');
+        },
+        exitViewport: function() {
+          console.log('b');
+          return $header.removeClass('scrolled');
+        }
+      });
+      smoothScroll.init();
+      return startTracking();
+    };
+    debounce = function(func, wait, immediate) {
+      var timeout;
+      timeout = void 0;
+      return function() {
+        var args, callNow, context, later;
+        context = this;
+        args = arguments;
+        later = function() {
+          timeout = null;
+          if (!immediate) {
+            return func.apply(context, args);
+          }
+        };
+        callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) {
+          return func.apply(context, args);
+        }
+      };
+    };
+    startTracking = function() {
+      return $(document).on('click', 'a', function(link) {
+        return analytics.track('Clicked link', {
+          text: $(link.target).text(),
+          href: $(link.target).prop('href')
+        });
+      });
+    };
+    return {
+      init: init
+    };
+  })();
+
+  $(function() {
+    return App.init();
+  });
+
+}).call(this);
+
+},{}]},{},[1])

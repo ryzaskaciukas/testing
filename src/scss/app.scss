@@ -22,9 +22,31 @@ body {
   margin-top: 3em;
 }
 
-.navigation {
-  text-align: right;
-  padding-top: 3em;
+header {
+  padding: 2em 0;
+  /* z-index: 1; */
+
+  .logo {
+    background: url('../img/1.png') no-repeat left center;
+    background-size: contain;
+  }
+
+  .nav-justified {
+    text-transform: uppercase;
+    text-align: center;
+    color: hsla(213, 14%, 15%, 1);
+
+    li > a {
+      color: hsla(213, 14%, 15%, 1);
+      background: transparent;
+
+      &:hover, &:focus {
+        color: hsla(213, 14%, 15%, 1);
+        text-decoration: underline;
+        background: transparent;
+      }
+    }
+  }
 }
 
 .stlogo {
@@ -47,7 +69,7 @@ body {
 }
 
 .intro {
-  padding-top: 20px;
+  padding-top: 10em;
 }
 
 .testimonials {
