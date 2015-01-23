@@ -1,229 +1,75 @@
-$centered-content: 0 5em;
+// Google fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
-button {
-  color: #fff;
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-family: 'Montserrat', sans-serif;
-  color: #383838;
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
+.intro_text {
+  padding-top: 200px;
+  text-align: left;
 
-header {
-  position: fixed;
-  top: 0px;
-  padding: 2em 0;
-  background-color: rgba(33, 37, 43, 0);
-  z-index: 1;
-
-  .nav-justified {
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-
-    li > a {
-      color: #fff;
-      background: transparent;
-
-      &:hover, &:focus {
-        color: #fff;
-        text-decoration: underline;
-        background: transparent;
-      }
-    }
+  h1 {
+    font-size: 5em;
   }
 }
 
-.container-fluid {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  overflow-x: hidden;
+.first {
+  padding-top: 3em;
 }
 
-#landing {
-  height: 100vh;
-  width: 100%;
-  padding-top: 15em;
-  background: #21262c url('../img/bg_1920.jpg') no-repeat fixed center;
-  background-size: cover;
-  background-position: center center;
-  color: #fff;
-
-  .scroll-down {
-    padding-top: 15em;
-
-    a {
-      opacity: 0.15;
-
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  }
+.second {
+  margin-top: 3em;
 }
 
-.call {
-  margin: 3em 0;
-  text-transform: uppercase;
-  font-size: 1.3em;
-  padding: 1em 2em;
-  color: #11a9ba;
-  border-color: #11a9ba;
-  background: none;
+.navigation {
+  text-align: right;
+  padding-top: 3em;
 }
 
-.call:hover {
-  background-color: #11a9ba;
-  border-color: #11a9ba;
-  color: #fff;
+.stlogo {
+  padding-top: 1.5em;
 }
 
-#our-work {
-  margin: 0 auto;
-  width: 700px;
-
-  h2 {
-    padding: 2em 0 1em;
-  }
-
-  .screens {
-    border-bottom: 2px solid #dedfe0;
-
-    img {
-      margin-top: 2em;
-      width: 550px;
-      /* height: 500px; */
-    }
-  }
-
-  .built-with {
-    padding-top: 3.5em;
-  }
-
-  .more-works {
-    a {
-      margin-right: 1em;
-    }
-  }
+.white {
+  color: white;
 }
 
-.abstract {
-  padding: 4em 0 3em;
+.statistics {
+  height: auto;
+  background-color: #f5f5f5;
+}
+
+.walk {
+   background: url("../img/bg.png") no-repeat center top;
+   background-size: cover;
+   height: 42em
+}
+
+.intro {
+  padding-top: 20px;
+}
+
+.testimonials {
+  padding-top: 10em;
+  background-color: white;
+  padding-bottom: 10em;
 
   img {
-    height: 250px;
+    height: 7em;
   }
 
-  h2 {
-    color: #11a9ba;
-  }
-
-  p {
-    font-size: 1.2em;
+  blockquote {
+    border-left: none;
   }
 }
 
-#who-are-we {
-  .abstract {
-    padding: 4em 0 1em;
-  }
-
-  background-color: #dedfe0;
-
-  .members {
-    padding: 1em 0 3em;
-
-    .member {
-      padding: 2em 0 4em;
-
-      h3 a {
-        color: #11a9ba;
-      }
-
-      .avatar {
-        width: 100%;
-        border-radius: 99999px;
-      }
-
-      .open-source {
-        h5 {
-          font-weight: 600;
-        }
-
-        img {
-          height: 50px;
-        }
-      }
-    }
-  }
+.buy {
+  padding-bottom: 10em;
 }
 
-#we-do-talks {
-  .abstract {
-    padding-bottom: 1em;
-  }
-
-  .main-talks {
-    padding-bottom: 2em;
-  }
-
-  .talk-slides {
-    img {
-      height: 200px;
-    }
-  }
-
-  .talk-descriptions {
-    padding-bottom: 2em;
-
-    a {
-      color: #11a9ba;
-    }
-  }
-}
-
-#our-process {
-  background-color: #dedfe0;
-  padding-bottom: 5em;
-
-  .abstract {
-    padding-bottom: 1em;
-  }
-
-  img.process-illustration {
-    height: 200px;
-  }
-
-  .process-description {
-    padding-top: 3em;
-  }
-
-  .usual-process {
-    padding-top: 2em;
-
-    h3 {
-      padding-bottom: .5em;
-    }
-
-    .step {
-      padding-bottom: 1.5em;
-
-      .bubble {
-        padding-top: 1.5em;
-      }
-    }
-  }
-}
-
-footer {
-  padding: 5em 0 3em;
-  background-color: #21262c;
+.footer {
+  background-color: #4d4c4c;
   color: #fff;
+  padding: 5em 0 10em;
 }
