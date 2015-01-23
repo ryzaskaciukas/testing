@@ -1,6 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Varela+Round:400,300,600,700);
 body {
-  font-family: 'Varela Round', sans-serif; }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'Varela Round', sans-serif;
+  color: #383838;
+  height: 100%;
+  width: 100%;
+  position: relative; }
 
 .intro_text {
   padding-top: 200px;
@@ -15,22 +22,26 @@ body {
   margin-top: 3em; }
 
 header {
-  padding: 2em 0;
-  /* z-index: 1; */ }
+  padding: 2em 3em;
+  z-index: 1; }
   header .logo {
     background: url('../img/1.png') no-repeat left center;
-    background-size: contain; }
-  header .nav-justified {
+    background-size: contain;
+    height: 3em; }
+  header .navigation {
     text-transform: uppercase;
-    text-align: center;
+    text-align: right;
     color: #21262c; }
-    header .nav-justified li > a {
+    header .navigation a {
       color: #21262c;
-      background: transparent; }
-      header .nav-justified li > a:hover, header .nav-justified li > a:focus {
+      background: transparent;
+      line-height: 3em; }
+      header .navigation a:hover, header .navigation a:focus {
         color: #21262c;
         text-decoration: underline;
         background: transparent; }
+    header .navigation a.button-buy {
+      border: 1px solid red; }
 
 .stlogo {
   padding-top: 1.5em; }

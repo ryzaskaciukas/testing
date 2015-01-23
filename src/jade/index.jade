@@ -24,12 +24,14 @@ head
   body
     .container-fluid
       header(style="position: absolute; top: 0; left: 0; width: 100%; background: #fff;")
-        ul.nav.nav-justified
-          li.logo
-          li
-            a(href='#why' data-scroll) Why Gymnast?
-          li
-            a(href='#buy' data-scroll) Buy for $4.99
+        .container
+          .row
+            .col-md-2.logo
+            .navigation
+              .col-md-2.col-md-offset-6.text-right
+                a(href='#why' data-scroll) Why Gymnast?
+              .col-md-2.text-right
+                a.button-buy(href='#buy' data-scroll) Buy for $4.99
     .container
       .row.intro
         .col-md-6.intro_text
