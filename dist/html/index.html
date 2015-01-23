@@ -24,25 +24,31 @@
 </head>
 <body>
   <div class="container-fluid">
-    <div class="container">
-      <div class="row navigation">
-        <div class="col-md-2 text-left"><img src="../img/1.png"/></div>
-        <div class="col-md-2 col-md-offset-6 stlogo">WHY GYMNAST?!!!!</div>
-        <div class="col-md-2 stlogo">BUY FOR $4.99</div>
-      </div>
-      <div class="row intro">
-        <div class="col-md-6 intro_text">
-          <h1>
-            <p>10 seconds</p>
-            <p>3 times a week</p>
-          </h1>
-          <h2>That is how much you will spend with your Starting Strength numbers</h2>
+    <header style="position: absolute; top: 0; left: 0; width: 100%; background: #fff;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 logo"></div>
+          <div class="navigation">
+            <div class="col-md-2 col-md-offset-6 text-right"><a href="#why" data-scroll="data-scroll">Why Gymnast?</a></div>
+            <div class="col-md-2 text-right"><a href="#buy" data-scroll="data-scroll" class="button-buy">Buy for $4.99</a></div>
+          </div>
         </div>
-        <div class="col-md-6 text-right"><img src="../img/intro_img.png"/></div>
       </div>
+    </header>
+  </div>
+  <div class="container">
+    <div class="row intro">
+      <div class="col-md-6 intro_text">
+        <h1>
+          <p>10 seconds</p>
+          <p>3 times a week</p>
+        </h1>
+        <h2>That is how much you will spend with your Starting Strength numbers</h2>
+      </div>
+      <div class="col-md-6 text-right"><img src="../img/intro_img.png"/></div>
     </div>
   </div>
-  <div class="container-fluid statistics">
+  <div id="why" class="container-fluid statistics">
     <div class="container">
       <div class="row">
         <div class="col-md-12 text-center">
@@ -76,7 +82,7 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid testimonials">
+  <div id="buy" class="container-fluid testimonials">
     <div class="container">
       <div class="row">
         <div class="col-md-1"><img src="../img/avatar_1.png" class="img-circle"/></div>

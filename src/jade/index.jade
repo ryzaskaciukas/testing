@@ -23,21 +23,25 @@ head
     script(src='../js/app.js')
   body
     .container-fluid
-      .container
-        .row.navigation
-          .col-md-2.text-left
-            img(src="../img/1.png")
-          .col-md-2.col-md-offset-6.stlogo WHY GYMNAST?!!!!
-          .col-md-2.stlogo BUY FOR $4.99
-        .row.intro
-          .col-md-6.intro_text
-            h1
-              p 10 seconds
-              p 3 times a week
-            h2 That is how much you will spend with your Starting Strength numbers
-          .col-md-6.text-right
-            img(src="../img/intro_img.png")
-    .container-fluid.statistics
+      header(style="position: absolute; top: 0; left: 0; width: 100%; background: #fff;")
+        .container
+          .row
+            .col-md-2.logo
+            .navigation
+              .col-md-2.col-md-offset-6.text-right
+                a(href='#why' data-scroll) Why Gymnast?
+              .col-md-2.text-right
+                a.button-buy(href='#buy' data-scroll) Buy for $4.99
+    .container
+      .row.intro
+        .col-md-6.intro_text
+          h1
+            p 10 seconds
+            p 3 times a week
+          h2 That is how much you will spend with your Starting Strength numbers
+        .col-md-6.text-right
+          img(src="../img/intro_img.png")
+    .container-fluid.statistics#why
       .container
         .row
           .col-md-12.text-center
@@ -60,7 +64,7 @@ head
             h1.stlogo Make better training decisions
             h4.stlogo Just the information you need to break through your plateaus.
             img.second(src="../img/statistics_img.png")
-    .container-fluid.testimonials
+    .container-fluid.testimonials#buy
       .container
         .row
           .col-md-1

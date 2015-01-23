@@ -2,7 +2,14 @@
 @import url(http://fonts.googleapis.com/css?family=Varela+Round:400,300,600,700);
 
 body {
+  margin: 0;
+  padding: 0;
+  border: 0;
   font-family: 'Varela Round', sans-serif;
+  color: #383838;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .intro_text {
@@ -22,9 +29,37 @@ body {
   margin-top: 3em;
 }
 
-.navigation {
-  text-align: right;
-  padding-top: 3em;
+header {
+  padding: 2em 3em;
+  z-index: 1;
+
+  .logo {
+    background: url('../img/1.png') no-repeat left center;
+    background-size: contain;
+    height: 3em;
+  }
+
+  .navigation {
+    text-transform: uppercase;
+    text-align: right;
+    color: hsla(213, 14%, 15%, 1);
+
+    a {
+      color: hsla(213, 14%, 15%, 1);
+      background: transparent;
+      line-height: 3em;
+
+      &:hover, &:focus {
+        color: hsla(213, 14%, 15%, 1);
+        text-decoration: underline;
+        background: transparent;
+      }
+    }
+
+    a.button-buy {
+      border: 1px solid red;
+    }
+  }
 }
 
 .stlogo {
@@ -50,7 +85,7 @@ body {
   padding-top: 10em;
 }
 .intro {
-  padding-top: 20px;
+  padding-top: 10em;
 }
 
 .testimonials {
