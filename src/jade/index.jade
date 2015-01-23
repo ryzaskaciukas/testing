@@ -8,6 +8,7 @@ head
     title GetGymnast
     link(rel='stylesheet', media='screen', href='../css/bootstrap.min.css')
     link(rel='stylesheet', media='screen', href='../css/app.css')
+    link(rel='stylesheet', media='screen', href='//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css')
 
     script(src='//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
     script(src='../js/scroll-up-bar.min.js')
@@ -31,7 +32,7 @@ head
               .col-md-2.col-md-offset-6.text-right
                 a(href='#why' data-scroll) Why Gymnast?
               .col-md-2.text-right
-                a.button-buy(href='#buy' data-scroll) Buy for $4.99
+                a.button-buy(href='#buy') Buy for $4.99
     .container
       .row.intro
         .col-md-6.intro_text
@@ -64,7 +65,7 @@ head
             h1.stlogo Make better training decisions
             h4.stlogo Just the information you need to break through your plateaus.
             img.second(src="../img/statistics_img.png")
-    .container-fluid.testimonials#buy
+    .container-fluid.testimonials
       .container
         .row
           .col-md-1
@@ -87,7 +88,8 @@ head
           .col-md-12.text-center
             h1 Bench that bodyweight quicker and save your time
             h3 just for $4.99
-            img(src="../img/app_store_img.png")
+            a(href='#buy')
+              img(src="../img/app_store_img.png")
 
     .container-fluid.footer
       .container
@@ -102,3 +104,9 @@ head
             p Office at Šaltinių g. 1-28, Vilnius, Lithuania
             p domas.bitvinskas@me.com
             p @nedomas
+
+
+    .hidden
+      #buy
+        h2 The app is in beta right now.
+        h3 Win a free copy of Gymnast and get notified upon launch.

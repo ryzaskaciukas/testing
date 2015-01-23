@@ -3,22 +3,30 @@
   var App;
 
   App = (function() {
-    var debounce, init, startTracking;
+    var attachBuy, debounce, init, startTracking;
     init = function() {
       var $header;
       $header = $('header');
       $header.scrollupbar({
         enterViewport: function() {
-          console.log('a');
           return $header.addClass('scrolled');
         },
         exitViewport: function() {
-          console.log('b');
           return $header.removeClass('scrolled');
         }
       });
       smoothScroll.init();
-      return startTracking();
+      startTracking();
+      return attachBuy();
+    };
+    attachBuy = function() {
+      return $("a[href='#buy']").fancybox({
+        helpers: {
+          overlay: {
+            locked: false
+          }
+        }
+      });
     };
     debounce = function(func, wait, immediate) {
       var timeout;

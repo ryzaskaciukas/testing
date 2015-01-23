@@ -4,15 +4,23 @@ App = (->
 
     $header.scrollupbar({
       enterViewport: ->
-        console.log 'a'
         $header.addClass('scrolled')
       exitViewport: ->
-        console.log 'b'
         $header.removeClass('scrolled')
     })
 
     smoothScroll.init()
     startTracking()
+    attachBuy()
+
+  attachBuy = ->
+    $("a[href='#buy']").fancybox(
+      helpers: {
+        overlay: {
+          locked: false
+        }
+      }
+    )
 
   debounce = (func, wait, immediate) ->
     timeout = undefined
