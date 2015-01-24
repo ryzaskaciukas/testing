@@ -31,7 +31,8 @@ h3 {
 }
 
 .pricetag {
-  color: #333
+  color: #333;
+  padding-bottom: 0.5em;
 }
 
 .first {
@@ -54,23 +55,21 @@ header {
 
   .navigation {
     text-transform: uppercase;
-    text-align: right;
+    text-align: left;
     color: hsla(213, 14%, 15%, 1);
 
     a {
       color: hsla(213, 14%, 15%, 1);
-      background: transparent;
       line-height: 3em;
 
       &:hover, &:focus {
         color: hsla(213, 14%, 15%, 1);
         text-decoration: underline;
-        background: transparent;
       }
     }
 
-    a.button-buy {
-      border: 1px solid red;
+    a.buy-button {
+      color: #fff;
     }
   }
 }
@@ -120,10 +119,16 @@ header {
 
 }
 
+.buyspace {
+  padding-bottom: 1em;
+}
 .footer {
   background-color: #4d4c4c;
   color: #fff;
-  padding: 5em 0 10em;
+  padding: 2em 0 2em;
+  a {
+    color: #fff;
+  }
 }
 
 #buy {
@@ -133,4 +138,8 @@ header {
   .notify-button {
     margin: 0;
   }
+}
+
+.contact-us {
+  font-size: 1.6em;
 }

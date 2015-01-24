@@ -29,7 +29,7 @@
 		"outputAbbreviatedPath": "\/dist\/img\/1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/dist\/img\/app_store_img.png": {
 		"fileType": 32768,
@@ -40,7 +40,7 @@
 		"outputAbbreviatedPath": "\/dist\/img\/app_store_img.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/dist\/img\/avatar_1.png": {
 		"fileType": 32768,
@@ -51,7 +51,7 @@
 		"outputAbbreviatedPath": "\/dist\/img\/avatar_1.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/dist\/img\/avatar_2.png": {
 		"fileType": 32768,
@@ -62,7 +62,7 @@
 		"outputAbbreviatedPath": "\/dist\/img\/avatar_2.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/dist\/img\/bg.png": {
 		"fileType": 32768,
@@ -73,7 +73,7 @@
 		"outputAbbreviatedPath": "\/dist\/img\/bg.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/dist\/img\/intro_img.png": {
 		"fileType": 32768,
@@ -84,7 +84,7 @@
 		"outputAbbreviatedPath": "\/dist\/img\/intro_img.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/dist\/img\/progress_img.png": {
 		"fileType": 32768,
@@ -95,7 +95,7 @@
 		"outputAbbreviatedPath": "\/dist\/img\/progress_img.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/dist\/img\/statistics_img.png": {
 		"fileType": 32768,
@@ -106,7 +106,7 @@
 		"outputAbbreviatedPath": "\/dist\/img\/statistics_img.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/dist\/js\/app.js": {
 		"fileType": 64,

@@ -27,12 +27,12 @@ head
       header(style="position: absolute; top: 0; left: 0; width: 100%; background: #fff;")
         .container
           .row
-            .col-md-2.logo
+            .col-md-2.col-xs-2.logo
             .navigation
-              .col-md-2.col-md-offset-6.text-right
-                a(href='#why' data-scroll) Why Gymnast?
-              .col-md-2.text-right
-                a.button-buy(href='#buy') Buy for $4.99
+              .col-md-2.col-md-offset-6.col-xs-6.text-right
+                a.btn(href='#why' data-scroll) Why Gymnast?
+              .col-md-2.col-xs-4.text-right
+                a.btn.btn-danger.buy-button(href='#buy') Buy for $4.99
     .container
       .row.intro
         .col-md-6.intro_text
@@ -64,7 +64,7 @@ head
           .col-md-12.text-center
             h1.stlogo Make better training decisions
             h4.stlogo Just the information you need to break through your plateaus.
-            img.second(src="../img/statistics_img.png")
+            img.second.col-md-4.col-md-offset-4.col-xs-6.col-xs-offset-3(src="../img/statistics_img.png")
     .container-fluid.testimonials
       .container
         .row
@@ -86,23 +86,28 @@ head
       .container
         .row
           .col-md-12.text-center
-            h1 Bench that bodyweight quicker and save your time
-            h3.pricetag just for $4.99
-            a(href='#buy')
+            h1.buyspace Bench that bodyweight quicker and save your time
+            h1.pricetag.col-md-6.text-right just for $4.99
+            a.col-md-6.text-left(href='#buy')
               img(src="../img/app_store_img.png")
 
     .container-fluid.footer
       .container
         .row
           .col-md-6
-            p Home
-            p Meet the team
-            p Blog
+            p
+              a(href='/') Home
+            p 
+              a(href='http://spacepicnic.net/#who-are-we') Meet the team
+            p 
+              a(href='http://domasbitvinskas.com/talks/') Blog
           .col-md-6
-            h3 Contact us
-            h4 Spacepicnic Design Studio
-            p Office at Šaltinių g. 1-28, Vilnius, Lithuania
-            p domas.bitvinskas@me.com
+            p.contact-us Contact us
+            h4 
+              a(href='http://spacepicnic.net') Spacepicnic Design Studio
+            p Let's talk at Šaltinių g. 1-28, Vilnius, Lithuania
+            p
+              a(href='mailto:domas.bitvinskas@me.com') domas.bitvinskas@me.com
             p @nedomas
 
 
