@@ -20,6 +20,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/dist\/html\/index.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/dist\/html\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/dist\/img\/1.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -64,13 +73,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/dist\/img\/bg.png": {
-		"fileType": 32768,
+	"\/dist\/img\/bg.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 7.99134e+06,
-		"inputAbbreviatedPath": "\/dist\/img\/bg.png",
-		"outputAbbreviatedPath": "\/dist\/img\/bg.png",
+		"initialSize": 169458,
+		"inputAbbreviatedPath": "\/dist\/img\/bg.jpg",
+		"outputAbbreviatedPath": "\/dist\/img\/bg.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
