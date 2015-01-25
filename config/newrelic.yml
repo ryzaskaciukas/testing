@@ -3,9 +3,9 @@
 # .NET, PHP, Python and Node applications with deep visibility and low
 # overhead.  For more information, visit www.newrelic.com.
 #
-# Generated December 06, 2014
+# Generated January 25, 2015
 #
-# This configuration file is custom generated for app32079963@heroku.com
+# This configuration file is custom generated for app33447940@heroku.com
 
 
 # Here are the settings that are common to all environments
@@ -15,7 +15,7 @@ common: &default_settings
   # You must specify the license key associated with your New Relic
   # account.  This key binds your Agent's data to your account in the
   # New Relic service.
-  license_key: '577032f7bcfb6483a6029da3e6820b759f0a2e01'
+  license_key: 'b482a9fd183bef480724a281c3a895cdc76a4d1d'
 
   # Agent Enabled (Ruby/Rails Only)
   # Use this setting to force the agent to run or not run.
@@ -49,7 +49,7 @@ common: &default_settings
   # See https://newrelic.com/docs/site/renaming-applications for more details
   # on renaming your New Relic applications.
   #
-  app_name: Spacepicnic
+  app_name: My Application
 
   # When "true", the agent collects performance data about your
   # application and reports this data to the New Relic service at
