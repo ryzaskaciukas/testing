@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'newrelic_rpm' if ENV['RACK_ENV'] == 'production'
+require 'newrelic_rpm'
 
 use Rack::Static,
   urls: ['/img', '/js', '/css'],
