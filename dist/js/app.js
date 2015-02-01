@@ -5,6 +5,7 @@
   App = (function() {
     var attachBuy, debounce, init, startTracking;
     init = function() {
+      alert('yo')
       var $header;
       $header = $('header');
       $header.scrollupbar({
